@@ -1,0 +1,46 @@
+  #homepagevid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+
+
+  .brands {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 1rem;
+  }
+  
+  .brands__item {
+    background: #fff;
+  }
+  
+  .brands__item img {
+    display: block;
+    /* Make sure max-width is added */
+    max-width: 100%;
+  }
+
+  .brands__item img {
+    display: block;
+    /* Make sure max-width is added */
+    max-width: 100%;
+    width: 100px;
+  }
+
+
+
+  div.ui-menu li {
+    list-style:none;
+    background-image:none;
+    background-repeat:none;
+    background-position:0; 
+}
+ul
+{
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+}

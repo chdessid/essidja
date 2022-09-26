@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US" data-website-id="1" data-main-object="website.page(4,)" data-oe-company-name="ESSID SOLUTIONS LDA"
+  data-add2cart-redirect="1">
+<link rel="apple-touch-icon" href="/web/image/website/1/favicon?unique=d12e256" type="image/x-icon" />
+
+<head>
+  {% include "blocks/head.html" %}
+</head>
+
+<body class="">
+  <div id="wrapwrap" class="homepage   ">
+    <!--NAV MENU -->
+    {% include "blocks/nav.html" %}
+    <main>
+        {% block content %}
+        <!-- Content Goes here -->
+        {% endblock content %}
+    </main>
+    <!--FOOTER-->
+    {% include "blocks/footer.html" %}
+  </div>
+  <script>
+    window.addEventListener('load', function () {
+      odoo.define('im_livechat.livesupport', function (require) {
+      });
+    });
+  </script>
+  <script id="tracking_code" async="1" src="https://www.googletagmanager.com/gtag/js?id=G-FHTF13K9GV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-FHTF13K9GV');
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+{% extends "base_frontend.html" %}
+{% block content %}
+
+<main>
+  <span class="hidden" data-for="contactus_form" data-oe-model="ir.ui.view" data-oe-id="2442" data-oe-field="arch"
+    data-oe-xpath="/t[1]/t[1]/span[1]"
+    data-values="{&#39;email_to&#39;: &#39;hi@essidsolutions.com&#39;, &#39;name&#39;: &#39;&#39;, &#39;phone&#39;: &#39;&#39;, &#39;email_from&#39;: &#39;&#39;, &#39;company&#39;: &#39;&#39;, &#39;subject&#39;: &#39;&#39;, &#39;contact_name&#39;: &#39;&#39;, &#39;partner_name&#39;: &#39;&#39;, &#39;description&#39;: &#39;&#39;}"></span>
+  <div id="wrap" class="oe_structure oe_empty" data-oe-model="ir.ui.view" data-oe-id="2442" data-oe-field="arch"
+    data-oe-xpath="/t[1]/t[1]/div[1]">
+
+    <section class="  pt64 pb64"
+    data-scroll-background-ratio="1" style="background-color: #103654; color: white;">
+   <div class="container">
+     <h1>Contact</h1>
+     <p  >Empowering Your Business With Data Science, Cyber Security, Software and AI Technology</p>
+   </div>
+ </section>
+
+    <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Custom Text"
+      style="background-image: none;">
+      <div class="s_allow_columns container">
+        <div class="row">
+          <div class="col-lg-8 mt-4 mt-lg-0 o_colored_level">
+            <p>
+              Drop us a line about your project or describe a challenge your company needs help solving. We’d love to
+              discuss how Essid Solutions&nbsp;can work with you. <br /></p>
+            <section class="s_website_form" data-vcss="001" data-snippet="s_website_form" data-name="Form">
+              <div class="container">
+                <form id="contactus_form" action="/website/form/" method="post" enctype="multipart/form-data"
+                  class="o_mark_required" data-mark="*" data-model_name="mail.mail" data-success-mode="redirect"
+                  data-success-page="/contactus-thank-you" data-pre-fill="true">
+                  <div class="s_website_form_rows row s_col_no_bgcolor">
+                    <div class="form-group col-12 s_website_form_field s_website_form_custom s_website_form_required"
+                      data-type="char" data-name="Field">
+                      <div class="row s_col_no_resize s_col_no_bgcolor">
+                        <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px"
+                          for="contact1">
+                          <span class="s_website_form_label_content">Your Name</span>
+                          <span class="s_website_form_mark"> *</span>
+                        </label>
+                        <div class="col-sm">
+                          <input id="contact1" type="text" class="form-control s_website_form_input" name="name"
+                            required="" data-fill-with="name" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group col-12 s_website_form_field s_website_form_custom" data-type="char"
+                      data-name="Field">
+                      <div class="row s_col_no_resize s_col_no_bgcolor">
+                        <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px"
+                          for="contact2">
+                          <span class="s_website_form_label_content">Phone Number</span>
+                        </label>
+                        <div class="col-sm">
+                          <input id="contact2" type="tel" class="form-control s_website_form_input" name="phone"
+                            data-fill-with="phone" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group col-12 s_website_form_field s_website_form_required" data-type="email"
+                      data-name="Field">
+                      <div class="row s_col_no_resize s_col_no_bgcolor">
+                        <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px"
+                          for="contact3">
+                          <span class="s_website_form_label_content">Your Email</span>
+                          <span class="s_website_form_mark"> *</span>
+                        </label>
+                        <div class="col-sm">
+                          <input id="contact3" type="email" class="form-control s_website_form_input" name="email_from"
+                            required="" data-fill-with="email" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group col-12 s_website_form_field s_website_form_custom" data-type="char"
+                      data-name="Field">
+                      <div class="row s_col_no_resize s_col_no_bgcolor">
+                        <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px"
+                          for="contact4">
+                          <span class="s_website_form_label_content">Your Company</span>
+                        </label>
+                        <div class="col-sm">
+                          <input id="contact4" type="text" class="form-control s_website_form_input" name="company"
+                            data-fill-with="commercial_company_name" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group col-12 s_website_form_field s_website_form_required" data-type="char"
+                      data-name="Field">
+                      <div class="row s_col_no_resize s_col_no_bgcolor">
+                        <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px"
+                          for="contact5">
+                          <span class="s_website_form_label_content">Subject</span>
+                          <span class="s_website_form_mark"> *</span>
+                        </label>
+                        <div class="col-sm">
+                          <input id="contact5" type="text" class="form-control s_website_form_input" name="subject"
+                            required="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group col-12 s_website_form_field s_website_form_custom s_website_form_required"
+                      data-type="text" data-name="Field">
+                      <div class="row s_col_no_resize s_col_no_bgcolor">
+                        <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px"
+                          for="contact6">
+                          <span class="s_website_form_label_content">Your Question</span>
+                        </label>
+                        <div class="col-sm">
+                          <textarea id="contact6" class="form-control s_website_form_input" name="description"
+                            required=""></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group col-12 s_website_form_field s_website_form_dnone">
+                      <div class="row s_col_no_resize s_col_no_bgcolor">
+                        <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px"
+                          for="contact7">
+                          <span class="s_website_form_label_content">Email To</span>
+                        </label>
+                        <div class="col-sm">
+                          <input id="contact7" type="hidden" class="form-control s_website_form_input" name="email_to"
+                            value="hi@essidsolutions.com" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group col-12 s_website_form_submit" data-name="Submit Button">
+                      <div style="width: 200px;" class="s_website_form_label"></div>
+                      <a href="#" role="button" class="btn btn-primary btn-lg s_website_form_send">Submit</a>
+                      <span id="s_website_form_result"></span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </section>
+          </div>
+          <div class="col-lg-4 mt-4 mt-lg-0 o_colored_level">
+            <p>
+              <span style="font-weight: bolder;">Essid Solutions LDA</span>
+            </p>
+            <p><span class="o_force_ltr">Rua Alexandre de Sa Pinto 143,1&nbsp;</span>1300-034 Lisbon Portugal</p>
+            <p>
+              <span class="o_force_ltr">Phone: + 351 927 159 955</span>
+            </p>
+            <p>
+              <span>Email: hi@essidsolutions.com</span>
+            </p>
+            <p>VIES VAT Number: PT516462121</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="s_map pb56 pt136" data-map-type="m" data-map-zoom="12" data-snippet="s_map"
+      data-map-address="Rua Alexandre de Sá Pinto 143, 1 Lisbon Lisboa (PT) Portugal" data-name="Map">
+      <div class="map_container o_not_editable">
+        <div class="css_non_editable_mode_hidden">
+          <div
+            class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text">
+            An address must be specified for a map to be embedded
+          </div>
+        </div>
+        <iframe class="s_map_embedded o_not_editable" width="100%" height="100%"
+          src="https://maps.google.com/maps?q=Rua%20Alexandre%20de%20S%C3%A1%20Pinto%20143%2C%201%20Lisbon%20Lisboa%20(PT)%20Portugal&amp;t=m&amp;z=12&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+          frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <div class="s_map_color_filter"></div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+{%endblock%}
